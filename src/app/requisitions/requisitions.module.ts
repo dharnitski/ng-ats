@@ -12,6 +12,7 @@ import { MaterialModule } from '../material.module';
 import { RequisitionsFilterModalComponent } from './requisitions-filter-modal/requisitions-filter-modal.component';
 import { RequisitionCandidatesComponent } from './requisition-candidates/requisition-candidates.component';
 import { RequisitionsListShortComponent } from './requisitions-list-short/requisitions-list-short.component';
+import { RequisitionCandidateComponent } from './requisition-candidate/requisition-candidate.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { RequisitionsListShortComponent } from './requisitions-list-short/requis
     RequisitionDetailsComponent,
     RequisitionsFilterModalComponent,
     RequisitionCandidatesComponent,
-    RequisitionsListShortComponent],
+    RequisitionsListShortComponent,
+    RequisitionCandidateComponent],
   imports: [
     CommonModule,
     RequisitionsRoutingModule,

@@ -7,14 +7,16 @@
   <ng-container matColumnDef="id">
     <th mat-header-cell *matHeaderCellDef> ID </th>
     <td mat-cell *matCellDef="let element">
-      <a [routerLink]="['/requisitions/req/', element.id]">Req {{element.id}}</a>
+      <a [routerLink]="['/requisitions/', element.id]">Req {{element.id}}</a>
     </td>
   </ng-container>
 
   <!-- Position Column -->
-  <ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef> No. </th>
-    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+  <ng-container matColumnDef="candCount">
+    <th mat-header-cell *matHeaderCellDef> Candidates </th>
+    <td mat-cell *matCellDef="let element">
+      <a [routerLink]="['/requisitions', element.id, 'candidates']"> {{element.candCount}}</a>
+       </td>
   </ng-container>
 
   <!-- Name Column -->
