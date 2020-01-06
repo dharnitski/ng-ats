@@ -10,11 +10,13 @@ import { AppComponent } from './app.component';
 import { reducers, metaReducers } from './reducers';
 import { MaterialModule } from './material.module';
 import { HeaderComponent } from './navigation/header/header.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

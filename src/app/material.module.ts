@@ -6,7 +6,8 @@ import {
     MatListModule, MatTabsModule, MatCardModule,
     MatSelectModule, MatProgressSpinnerModule, MatDialogModule,
     MatTableModule, MatSortModule, MatPaginatorModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatRadioModule
 } from '@angular/material';
 
 const types = [MatButtonModule, MatIconModule, MatInputModule,
@@ -15,7 +16,7 @@ const types = [MatButtonModule, MatIconModule, MatInputModule,
     MatListModule, MatTabsModule, MatCardModule,
     MatSelectModule, MatProgressSpinnerModule, MatDialogModule,
     MatTableModule, MatSortModule, MatPaginatorModule,
-    MatSnackBarModule
+    MatSnackBarModule, MatRadioModule
 ];
 
 @NgModule({
