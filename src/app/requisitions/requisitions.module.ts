@@ -13,6 +13,7 @@ import { RequisitionsFilterModalComponent } from './requisitions-filter-modal/re
 import { RequisitionCandidatesComponent } from './requisition-candidates/requisition-candidates.component';
 import { RequisitionsListShortComponent } from './requisitions-list-short/requisitions-list-short.component';
 import { RequisitionCandidateComponent } from './requisition-candidate/requisition-candidate.component';
+import { CandidatesSharedModule } from '../candidates/shared/candidates-shared.module';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { RequisitionCandidateComponent } from './requisition-candidate/requisiti
     RequisitionsFilterModalComponent,
     RequisitionCandidatesComponent,
     RequisitionsListShortComponent,
-    RequisitionCandidateComponent],
+    RequisitionCandidateComponent,
+  ],
   imports: [
     CommonModule,
     RequisitionsRoutingModule,
@@ -32,6 +34,7 @@ import { RequisitionCandidateComponent } from './requisition-candidate/requisiti
     MaterialModule,
     // dynamic component exception for Material Components
     MatDialogModule,
+    CandidatesSharedModule
   ],
   entryComponents: [RequisitionsFilterModalComponent]
 })
