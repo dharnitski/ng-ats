@@ -9,10 +9,16 @@ import { RequisitionDetailsComponent } from './requisition-details/requisition-d
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDialogModule } from '@angular/material';
 import { MaterialModule } from '../material.module';
+import { RequisitionsFilterModalComponent } from './requisitions-filter-modal/requisitions-filter-modal.component';
 
 
 @NgModule({
-  declarations: [RequisitionsComponent, RequisitionsFilterComponent, RequisitionsListComponent, RequisitionDetailsComponent],
+  declarations: [
+    RequisitionsComponent,
+    RequisitionsFilterComponent,
+    RequisitionsListComponent,
+    RequisitionDetailsComponent,
+    RequisitionsFilterModalComponent],
   imports: [
     CommonModule,
     RequisitionsRoutingModule,
@@ -20,6 +26,7 @@ import { MaterialModule } from '../material.module';
     MaterialModule,
     // dynamic component exception for Material Components
     MatDialogModule,
-  ]
+  ],
+  entryComponents: [RequisitionsFilterModalComponent]
 })
 export class RequisitionsModule { }
