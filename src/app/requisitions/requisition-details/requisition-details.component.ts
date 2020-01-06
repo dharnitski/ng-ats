@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material';
-import { RequisitionsFilterModalComponent } from '../requisitions-filter-modal/requisitions-filter-modal.component';
 
 @Component({
   selector: 'app-requisition-details',
@@ -9,24 +7,9 @@ import { RequisitionsFilterModalComponent } from '../requisitions-filter-modal/r
 })
 export class RequisitionDetailsComponent implements OnInit {
 
-  constructor(
-    private dialog: MatDialog,
-  ) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  onFilterClick() {
-    const dialogRef = this.dialog.open(RequisitionsFilterModalComponent, {
-
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      // if (result) {
-      //   this.trainingService.cancelExercise(this.progress);
-      // } else {
-      //   this.startOrResumeTimer();
-      // }
-    });
-  }
 }

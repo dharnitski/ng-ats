@@ -10,6 +10,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDialogModule } from '@angular/material';
 import { MaterialModule } from '../material.module';
 import { RequisitionsFilterModalComponent } from './requisitions-filter-modal/requisitions-filter-modal.component';
+import { RequisitionCandidatesComponent } from './requisition-candidates/requisition-candidates.component';
+import { RequisitionsListShortComponent } from './requisitions-list-short/requisitions-list-short.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { RequisitionsFilterModalComponent } from './requisitions-filter-modal/re
     RequisitionsFilterComponent,
     RequisitionsListComponent,
     RequisitionDetailsComponent,
-    RequisitionsFilterModalComponent],
+    RequisitionsFilterModalComponent,
+    RequisitionCandidatesComponent,
+    RequisitionsListShortComponent],
   imports: [
     CommonModule,
     RequisitionsRoutingModule,
