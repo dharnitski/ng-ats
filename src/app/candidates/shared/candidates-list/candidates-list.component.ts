@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
 
@@ -12,7 +12,7 @@ import { CandItem } from '../candidates-shared.model';
   templateUrl: './candidates-list.component.html',
   styleUrls: ['./candidates-list.component.css']
 })
-export class CandidatesListComponent implements OnInit {
+export class CandidatesListComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = ['name', 'email', 'status', 'created'];
   dataSource = new MatTableDataSource<CandItem>();
 
@@ -41,6 +41,11 @@ export class CandidatesListComponent implements OnInit {
       this.dataSource.data = candidates;
     });
 
+  }
+
+  ngAfterViewInit(): void {
+    this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
   }
 
 }
