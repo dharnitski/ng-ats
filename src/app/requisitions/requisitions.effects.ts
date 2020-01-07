@@ -9,7 +9,7 @@ import { RequisitionService } from './requisitions.service';
 export class RequisitionsEffects {
 
   loadReqs$ = createEffect(() => this.actions$.pipe(
-    ofType(loadRequisitions().type),
+    ofType(loadRequisitions),
     mergeMap(() => this.reqService.getReqs()
       .pipe(
         map(requisitions => reqsLoaded({ requisitions })),

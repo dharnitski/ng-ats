@@ -1,11 +1,14 @@
 import { Observable, of } from 'rxjs';
-import { CandItem } from './candidates-shared.model';
+import { CandItem, CandFilter } from './candidates-shared.model';
 import { allCand } from './candidates-shared.mock';
 
 export class CandidatesService {
 
-  getReqCandidates(reqId: number): Observable<CandItem[]> {
-    return of(allCand.filter(cand => cand.reqId === reqId));
+  getReqCandidates(filter: CandFilter): Observable<CandItem[]> {
+    if (!filter.reqId) {
+      return of(allCand);
+    } else {
+      return of(allCand.filter(cand => cand.reqId === filter.reqId));
+    }
   }
-
 }

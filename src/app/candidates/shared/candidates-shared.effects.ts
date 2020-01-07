@@ -5,7 +5,7 @@ import { CandidatesService } from './candidates-shared.service';
 @Injectable()
 export class CandidatesEffects {
 
-  // loadReqs$ = createEffect(() => this.actions$.pipe(
+  // loadCandidates$ = createEffect(() => this.actions$.pipe(
   //   ofType(loadRequisitions().type),
   //   mergeMap(() => this.reqService.getReqs()
   //     .pipe(

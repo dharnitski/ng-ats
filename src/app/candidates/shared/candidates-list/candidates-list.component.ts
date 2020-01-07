@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Store } from '@ngrx/store';
+
+import * as fromCand from '../candidates-shared.reducer';
+import { candFilterChanged } from '../candidates-shared.actions';
 
 export interface PeriodicElement {
   id: number,
@@ -31,9 +36,23 @@ export class CandidatesListComponent implements OnInit {
   displayedColumns: string[] = ['name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private store: Store<fromCand.State>
+  ) { }
 
   ngOnInit() {
+    this.route.params.subscribe(
+      params => {
+        const reqId = Number(params.req_id);
+        const candFilter$ = this.store.select(fromCand.selectFilter);
+        candFilter$.subscribe(filter => {
+          // todo: should we check if reqId changed?
+          const newFilter = { ...filter, reqId };
+          this.store.dispatch(candFilterChanged({ filter: newFilter }));
+        });
+      }
+    );
   }
 
 }
