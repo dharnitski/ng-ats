@@ -1,8 +1,6 @@
 import { createAction, props } from '@ngrx/store';
 import { ReqItem } from './requisitions.model';
 
-
-
 export const loadRequisitions = createAction(
   '[Reqs] Load Requisitions'
 );
@@ -12,10 +10,8 @@ export const reqsLoaded = createAction(
   props<{ requisitions: ReqItem[] }>()
 );
 
-export const reqSelectedType = '[Reqs] Req Selected';
-
 export const reqSelected = createAction(
-  reqSelectedType,
+  '[Reqs] Req Selected',
   props<{ reqId: number }>()
 );
 

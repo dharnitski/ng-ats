@@ -1,5 +1,7 @@
+import { CandItem } from './candidates-shared.model';
 
-export const allCand = [
+
+export const allCand: CandItem[] = [
   { 'id': 1, 'firstName': 'Bellina', 'lastName': 'Besset', 'email': 'bbesset0@usa.gov', 'status': 'Green', 'created': '03/18/2019', 'reqId': 64 },
   { 'id': 2, 'firstName': 'Lissie', 'lastName': 'Lydiate', 'email': 'llydiate1@accuweather.com', 'status': 'Red', 'created': '08/27/2017', 'reqId': 13 },
   { 'id': 3, 'firstName': 'Kristian', 'lastName': 'Wroth', 'email': 'kwroth2@google.com', 'status': 'Khaki', 'created': '07/12/2017', 'reqId': 59 },
@@ -412,7 +414,7 @@ export const allCand = [
   { 'id': 410, 'firstName': 'Fabio', 'lastName': 'Kubista', 'email': 'fkubistabd@illinois.edu', 'status': 'Green', 'created': '12/16/2018', 'reqId': 100 },
   { 'id': 411, 'firstName': 'Lucretia', 'lastName': 'Kemmis', 'email': 'lkemmisbe@illinois.edu', 'status': 'Turquoise', 'created': '02/20/2018', 'reqId': 5 },
   { 'id': 412, 'firstName': 'Sheryl', 'lastName': 'Shacklady', 'email': 'sshackladybf@google.co.jp', 'status': 'Crimson', 'created': '06/28/2019', 'reqId': 51 },
-  {'id': 413, 'firstName': 'Augusta', 'lastName': 'Daly', 'email': 'aodalybg@vkontakte.ru', 'status': 'Aquamarine', 'created': '03 / 22 / 2018', 'reqId': 47},
+  { 'id': 413, 'firstName': 'Augusta', 'lastName': 'Daly', 'email': 'aodalybg@vkontakte.ru', 'status': 'Aquamarine', 'created': '03 / 22 / 2018', 'reqId': 47 },
   { 'id': 414, 'firstName': 'Jo', 'lastName': 'Shand', 'email': 'jshandbh@ow.ly', 'status': 'Indigo', 'created': '10/29/2018', 'reqId': 51 },
   { 'id': 415, 'firstName': 'Templeton', 'lastName': 'Bastistini', 'email': 'tbastistinibi@go.com', 'status': 'Mauv', 'created': '06/06/2017', 'reqId': 21 },
   { 'id': 416, 'firstName': 'Lauryn', 'lastName': 'Hens', 'email': 'lhensbj@sakura.ne.jp', 'status': 'Violet', 'created': '11/09/2018', 'reqId': 53 },
