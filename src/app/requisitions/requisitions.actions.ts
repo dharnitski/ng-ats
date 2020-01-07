@@ -12,3 +12,15 @@ export const reqsLoaded = createAction(
   props<{ requisitions: ReqItem[] }>()
 );
 
+export const reqSelectedType = '[Reqs] Req Selected';
+
+export const reqSelected = createAction(
+  reqSelectedType,
+  props<{ reqId: number }>()
+);
+
+export const reqLoaded = createAction(
+  '[Reqs] Req Loaded',
+  props<{ requisition: ReqItem }>()
+);
+

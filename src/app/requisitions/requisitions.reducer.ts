@@ -7,6 +7,7 @@ export const requisitionsFeatureKey = 'requisitions';
 
 export interface ReqsState {
   requisitions: ReqItem[];
+  requisition: ReqItem;
 }
 
 export interface State extends fromRoot.State {
@@ -14,12 +15,14 @@ export interface State extends fromRoot.State {
 }
 
 const initialState: ReqsState = {
-  requisitions: []
+  requisitions: [],
+  requisition: null
 };
 
 const reqsReducer = createReducer(
   initialState,
-  on(reqActions.reqsLoaded , (state, { requisitions }) => ({ ...state, requisitions }))
+  on(reqActions.reqsLoaded, (state, { requisitions }) => ({ ...state, requisitions })),
+  on(reqActions.reqLoaded, (state, { requisition }) => ({ ...state, requisition }))
 );
 
 export function reducer(state: ReqsState | undefined, action: Action) {
@@ -31,4 +34,9 @@ export const selectFeature = (state: State) => state.requisitions;
 export const selectRequisitions = createSelector(
   selectFeature,
   (state: ReqsState) => state.requisitions
+);
+
+export const selectCurrentReq = createSelector(
+  selectFeature,
+  (state: ReqsState) => state.requisition
 );

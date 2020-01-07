@@ -8,4 +8,8 @@ export class RequisitionService {
     return of(allItems);
   }
 
+  getReq(id: number): Observable<ReqItem> {
+    return of(allItems.find(req => req.id === id));
+  }
+
 }

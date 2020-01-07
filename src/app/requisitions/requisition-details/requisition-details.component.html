@@ -2,7 +2,12 @@
   <div fxFlex="300px">
     <app-requisitions-list-short></app-requisitions-list-short>
   </div>
-  <div fxFlex>
-    <h1> I am Requisition XXX details</h1>
+  <div fxFlex *ngIf="requisition$ | async as requisition">
+    <mat-card>
+      <h1> {{requisition.title}}</h1>
+      <h2> {{requisition.status}}</h2>
+      <div> {{requisition.dateCreated}}</div>
+      <div> {{requisition.city}}</div>
+    </mat-card>
   </div>
 </div>

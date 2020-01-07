@@ -1,11 +1,10 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { Store } from '@ngrx/store';
+import { MatTableDataSource, MatSort, MatPaginator } from '@angular/material';
 
 import * as fromReqs from '../requisitions.reducer';
-import { Observable } from 'rxjs';
 import { ReqItem } from '../requisitions.model';
 import { loadRequisitions } from '../requisitions.actions';
-import { MatTableDataSource, MatSort, MatPaginator } from '@angular/material';
 
 export interface PeriodicElement {
   id: number,

@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Store } from '@ngrx/store';
+
+import * as fromReqs from '../requisitions.reducer';
+import { reqSelected } from '../requisitions.actions';
 
 @Component({
   selector: 'app-requisition-candidates',
@@ -7,9 +12,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RequisitionCandidatesComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private store: Store<fromReqs.State>
+  ) { }
 
   ngOnInit() {
+    this.route.params.subscribe(
+      params => {
+        const reqId = Number(params.req_id);
+        this.store.dispatch(reqSelected({ reqId }));
+      }
+    );
   }
 
 }

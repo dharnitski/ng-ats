@@ -15,5 +15,14 @@ export const reducers: ActionReducerMap<State> = {
 
 };
 
+// console.log all actions
+export function debug(reducer: ActionReducer<any>): ActionReducer<any> {
+  return function (state, action) {
+    console.log('state', state);
+    console.log('action', action);
 
-export const metaReducers: MetaReducer<State>[] = !environment.production ? [] : [];
+    return reducer(state, action);
+  };
+}
+
+export const metaReducers: MetaReducer<State>[] = !environment.production ? [debug] : [];
