@@ -3,8 +3,10 @@
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef> Name </th>
     <td mat-cell *matCellDef="let element">
-      <!-- to do: should be dynamic for reqs and candidates -->
-      <a [routerLink]="['/candidates', element.id]">{{element.firstName}} {{element.lastName}}</a>
+      <a *ngIf="!reqId" [routerLink]="['/candidates', element.id]">
+        {{element.firstName}} {{element.lastName}}</a>
+      <a *ngIf="reqId" [routerLink]="['/requisitions', reqId, 'candidates', element.id]">
+        {{element.firstName}} {{element.lastName}}</a>
     </td>
   </ng-container>
 

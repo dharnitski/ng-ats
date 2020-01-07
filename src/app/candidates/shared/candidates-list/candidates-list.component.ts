@@ -15,6 +15,7 @@ import { CandItem } from '../candidates-shared.model';
 export class CandidatesListComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = ['name', 'email', 'status', 'created'];
   dataSource = new MatTableDataSource<CandItem>();
+  reqId: number = null;
 
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
@@ -28,6 +29,7 @@ export class CandidatesListComponent implements OnInit, AfterViewInit {
     this.route.params.subscribe(
       params => {
         const reqId = Number(params.req_id);
+        this.reqId = reqId;
         const candFilter$ = this.store.select(fromCand.selectFilter);
         candFilter$.subscribe(filter => {
           // todo: should we check if reqId changed?
