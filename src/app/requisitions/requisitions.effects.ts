@@ -14,7 +14,8 @@ export class RequisitionsEffects {
       .pipe(
         map(requisitions => reqsLoaded({ requisitions })),
         catchError(() => EMPTY)
-      ))
+      )
+    )
   ));
 
   loadReq$ = createEffect(() => this.actions$.pipe(

@@ -1,5 +1,6 @@
 import { Action, createReducer, on, createSelector } from '@ngrx/store';
 import * as fromRoot from '../../reducers';
+import * as candActions from './candidates-shared.actions';
 import { CandFilter, CandItem } from './candidates-shared.model';
 
 export const candidatesFeatureKey = 'candidates';
@@ -24,6 +25,7 @@ const initialState: CandState = {
 
 const candReducer = createReducer(
   initialState,
+  on(candActions.candidatesLoaded, (state, { candidates }) => ({ ...state, candidates })),
 );
 
 export function reducer(state: CandState | undefined, action: Action) {

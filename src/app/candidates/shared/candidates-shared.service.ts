@@ -4,7 +4,7 @@ import { allCand } from './candidates-shared.mock';
 
 export class CandidatesService {
 
-  getReqCandidates(filter: CandFilter): Observable<CandItem[]> {
+  getCandidates(filter: CandFilter): Observable<CandItem[]> {
     if (!filter.reqId) {
       return of(allCand);
     } else {
