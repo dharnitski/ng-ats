@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { StoreModule } from '@ngrx/store';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDialogModule } from '@angular/material';
-import { MaterialModule } from '../material.module';
+import { EffectsModule } from '@ngrx/effects';
 
+import { MaterialModule } from '../material.module';
 import { RequisitionsRoutingModule } from './requisitions-routing.module';
 import { RequisitionsComponent } from './requisitions.component';
 import { RequisitionsFilterComponent } from './requisitions-filter/requisitions-filter.component';
@@ -17,6 +18,9 @@ import { RequisitionCandidateComponent } from './requisition-candidate/requisiti
 import { CandidatesSharedModule } from '../candidates/shared/candidates-shared.module';
 
 import * as fromReqs from './requisitions.reducer';
+import { RequisitionsEffects } from './requisitions.effects';
+import { RequisitionService } from './requisitions.service';
+
 
 
 @NgModule({
@@ -38,8 +42,10 @@ import * as fromReqs from './requisitions.reducer';
     // dynamic component exception for Material Components
     MatDialogModule,
     CandidatesSharedModule,
-    StoreModule.forFeature(fromReqs.requisitionsFeatureKey, fromReqs.reducer)
+    StoreModule.forFeature(fromReqs.requisitionsFeatureKey, fromReqs.reducer),
+    EffectsModule.forFeature([RequisitionsEffects])
   ],
-  entryComponents: [RequisitionsFilterModalComponent]
+  entryComponents: [RequisitionsFilterModalComponent],
+  providers: [RequisitionService]
 })
 export class RequisitionsModule { }

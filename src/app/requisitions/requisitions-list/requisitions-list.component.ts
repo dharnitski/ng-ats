@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+
+import * as fromReqs from '../requisitions.reducer';
+import { Observable } from 'rxjs';
+import { ReqItem } from '../requisitions.model';
+import { loadRequisitions } from '../requisitions.actions';
+import { MatTableDataSource, MatSort, MatPaginator } from '@angular/material';
 
 export interface PeriodicElement {
   id: number,
@@ -8,32 +15,30 @@ export interface PeriodicElement {
   symbol: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  { id: 1, candCount: 10, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { id: 2, candCount: 20, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { id: 3, candCount: 30, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { id: 4, candCount: 40, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  { id: 5, candCount: 50, name: 'Boron', weight: 10.811, symbol: 'B' },
-  { id: 6, candCount: 60, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  { id: 7, candCount: 70, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  { id: 8, candCount: 80, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  { id: 9, candCount: 90, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { id: 10, candCount: 100, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
-];
-
 @Component({
   selector: 'app-requisitions-list',
   templateUrl: './requisitions-list.component.html',
   styleUrls: ['./requisitions-list.component.css']
 })
-export class RequisitionsListComponent implements OnInit {
+export class RequisitionsListComponent implements OnInit, AfterViewInit {
+  displayedColumns: string[] = ['id', 'candCount', 'title', 'status'];
+  dataSource = new MatTableDataSource<ReqItem>();
 
-  displayedColumns: string[] = ['id', 'candCount', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
-  constructor() { }
+  constructor(private store: Store<fromReqs.State>) { }
 
   ngOnInit() {
+    this.store.select(fromReqs.selectRequisitions).subscribe(reqs => {
+      this.dataSource.data = reqs;
+    });
+    this.store.dispatch(loadRequisitions());
+  }
+
+  ngAfterViewInit(): void {
+    this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
   }
 
 }

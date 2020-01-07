@@ -5,8 +5,8 @@ export interface ReqItem {
   id: number;
   title: string;
   status: string;
-  date_created: string;
-  candidates_count: number;
+  dateCreated: string;
+  candCount: number;
   city: string;
   state: string;
 }

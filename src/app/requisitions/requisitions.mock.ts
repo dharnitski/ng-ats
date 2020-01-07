@@ -5,800 +5,800 @@ export const allItems: ReqItem[] =
     id: 1,
     title: 'Keylex',
     status: 'Yellow',
-    date_created: '02/03/2018',
-    candidates_count: 37,
+    dateCreated: '02/03/2018',
+    candCount: 37,
     city: 'Macon',
     state: 'Georgia'
   }, {
     id: 2,
     title: 'Overhold',
     status: 'Puce',
-    date_created: '04/06/2018',
-    candidates_count: 89,
+    dateCreated: '04/06/2018',
+    candCount: 89,
     city: 'Washington',
     state: 'District of Columbia'
   }, {
     id: 3,
     title: 'Stronghold',
     status: 'Maroon',
-    date_created: '11/09/2019',
-    candidates_count: 84,
+    dateCreated: '11/09/2019',
+    candCount: 84,
     city: 'Oklahoma City',
     state: 'Oklahoma'
   }, {
     id: 4,
     title: 'Greenlam',
     status: 'Orange',
-    date_created: '01/04/2020',
-    candidates_count: 88,
+    dateCreated: '01/04/2020',
+    candCount: 88,
     city: 'Huntington',
     state: 'West Virginia'
   }, {
     id: 5,
     title: 'Zaam-Dox',
     status: 'Khaki',
-    date_created: '06/03/2018',
-    candidates_count: 11,
+    dateCreated: '06/03/2018',
+    candCount: 11,
     city: 'Inglewood',
     state: 'California'
   }, {
     id: 6,
     title: 'Fix San',
     status: 'Aquamarine',
-    date_created: '08/29/2019',
-    candidates_count: 61,
+    dateCreated: '08/29/2019',
+    candCount: 61,
     city: 'Scottsdale',
     state: 'Arizona'
   }, {
     id: 7,
     title: 'Span',
     status: 'Orange',
-    date_created: '08/21/2019',
-    candidates_count: 25,
+    dateCreated: '08/21/2019',
+    candCount: 25,
     city: 'Indianapolis',
     state: 'Indiana'
   }, {
     id: 8,
     title: 'Sub-Ex',
     status: 'Crimson',
-    date_created: '08/05/2018',
-    candidates_count: 57,
+    dateCreated: '08/05/2018',
+    candCount: 57,
     city: 'El Paso',
     state: 'Texas'
   }, {
     id: 9,
     title: 'It',
     status: 'Turquoise',
-    date_created: '12/27/2019',
-    candidates_count: 73,
+    dateCreated: '12/27/2019',
+    candCount: 73,
     city: 'Providence',
     state: 'Rhode Island'
   }, {
     id: 10,
     title: 'Biodex',
     status: 'Purple',
-    date_created: '07/04/2018',
-    candidates_count: 59,
+    dateCreated: '07/04/2018',
+    candCount: 59,
     city: 'Dallas',
     state: 'Texas'
   }, {
     id: 11,
     title: 'Alphazap',
     status: 'Blue',
-    date_created: '10/02/2019',
-    candidates_count: 72,
+    dateCreated: '10/02/2019',
+    candCount: 72,
     city: 'Washington',
     state: 'District of Columbia'
   }, {
     id: 12,
     title: 'Span',
     status: 'Orange',
-    date_created: '11/10/2018',
-    candidates_count: 25,
+    dateCreated: '11/10/2018',
+    candCount: 25,
     city: 'Savannah',
     state: 'Georgia'
   }, {
     id: 13,
     title: 'Subin',
     status: 'Blue',
-    date_created: '04/17/2019',
-    candidates_count: 85,
+    dateCreated: '04/17/2019',
+    candCount: 85,
     city: 'Miami',
     state: 'Florida'
   }, {
     id: 14,
     title: 'Alphazap',
     status: 'Red',
-    date_created: '10/27/2019',
-    candidates_count: 80,
+    dateCreated: '10/27/2019',
+    candCount: 80,
     city: 'Houston',
     state: 'Texas'
   }, {
     id: 15,
     title: 'Zathin',
     status: 'Mauv',
-    date_created: '01/16/2018',
-    candidates_count: 30,
+    dateCreated: '01/16/2018',
+    candCount: 30,
     city: 'Burbank',
     state: 'California'
   }, {
     id: 16,
     title: 'Quo Lux',
     status: 'Orange',
-    date_created: '11/09/2019',
-    candidates_count: 52,
+    dateCreated: '11/09/2019',
+    candCount: 52,
     city: 'Bradenton',
     state: 'Florida'
   }, {
     id: 17,
     title: 'Fix San',
     status: 'Khaki',
-    date_created: '01/23/2019',
-    candidates_count: 99,
+    dateCreated: '01/23/2019',
+    candCount: 99,
     city: 'Hartford',
     state: 'Connecticut'
   }, {
     id: 18,
     title: 'Job',
     status: 'Goldenrod',
-    date_created: '12/19/2019',
-    candidates_count: 10,
+    dateCreated: '12/19/2019',
+    candCount: 10,
     city: 'Charlotte',
     state: 'North Carolina'
   }, {
     id: 19,
     title: 'Tresom',
     status: 'Turquoise',
-    date_created: '03/30/2019',
-    candidates_count: 39,
+    dateCreated: '03/30/2019',
+    candCount: 39,
     city: 'Jacksonville',
     state: 'Florida'
   }, {
     id: 20,
     title: 'Asoka',
     status: 'Aquamarine',
-    date_created: '04/04/2018',
-    candidates_count: 6,
+    dateCreated: '04/04/2018',
+    candCount: 6,
     city: 'Chicago',
     state: 'Illinois'
   }, {
     id: 21,
     title: 'Veribet',
     status: 'Green',
-    date_created: '05/10/2018',
-    candidates_count: 86,
+    dateCreated: '05/10/2018',
+    candCount: 86,
     city: 'Muncie',
     state: 'Indiana'
   }, {
     id: 22,
     title: 'Zaam-Dox',
     status: 'Teal',
-    date_created: '08/10/2018',
-    candidates_count: 55,
+    dateCreated: '08/10/2018',
+    candCount: 55,
     city: 'New York City',
     state: 'New York'
   }, {
     id: 23,
     title: 'Bitchip',
     status: 'Turquoise',
-    date_created: '05/04/2018',
-    candidates_count: 64,
+    dateCreated: '05/04/2018',
+    candCount: 64,
     city: 'Tucson',
     state: 'Arizona'
   }, {
     id: 24,
     title: 'Aerified',
     status: 'Indigo',
-    date_created: '05/06/2018',
-    candidates_count: 95,
+    dateCreated: '05/06/2018',
+    candCount: 95,
     city: 'South Lake Tahoe',
     state: 'California'
   }, {
     id: 25,
     title: 'Sonair',
     status: 'Crimson',
-    date_created: '12/12/2018',
-    candidates_count: 38,
+    dateCreated: '12/12/2018',
+    candCount: 38,
     city: 'Milwaukee',
     state: 'Wisconsin'
   }, {
     id: 26,
     title: 'Y-Solowarm',
     status: 'Violet',
-    date_created: '05/05/2019',
-    candidates_count: 6,
+    dateCreated: '05/05/2019',
+    candCount: 6,
     city: 'San Francisco',
     state: 'California'
   }, {
     id: 27,
     title: 'Stronghold',
     status: 'Crimson',
-    date_created: '02/17/2019',
-    candidates_count: 90,
+    dateCreated: '02/17/2019',
+    candCount: 90,
     city: 'Glendale',
     state: 'Arizona'
   }, {
     id: 28,
     title: 'Domainer',
     status: 'Aquamarine',
-    date_created: '08/21/2018',
-    candidates_count: 5,
+    dateCreated: '08/21/2018',
+    candCount: 5,
     city: 'Madison',
     state: 'Wisconsin'
   }, {
     id: 29,
     title: 'Sub-Ex',
     status: 'Puce',
-    date_created: '11/15/2019',
-    candidates_count: 26,
+    dateCreated: '11/15/2019',
+    candCount: 26,
     city: 'Spartanburg',
     state: 'South Carolina'
   }, {
     id: 30,
     title: 'Domainer',
     status: 'Yellow',
-    date_created: '10/18/2018',
-    candidates_count: 22,
+    dateCreated: '10/18/2018',
+    candCount: 22,
     city: 'Washington',
     state: 'District of Columbia'
   }, {
     id: 31,
     title: 'Flowdesk',
     status: 'Green',
-    date_created: '09/28/2018',
-    candidates_count: 45,
+    dateCreated: '09/28/2018',
+    candCount: 45,
     city: 'Saint Paul',
     state: 'Minnesota'
   }, {
     id: 32,
     title: 'Daltfresh',
     status: 'Yellow',
-    date_created: '12/02/2018',
-    candidates_count: 76,
+    dateCreated: '12/02/2018',
+    candCount: 76,
     city: 'Richmond',
     state: 'Virginia'
   }, {
     id: 33,
     title: 'Bitwolf',
     status: 'Teal',
-    date_created: '06/13/2019',
-    candidates_count: 36,
+    dateCreated: '06/13/2019',
+    candCount: 36,
     city: 'Garland',
     state: 'Texas'
   }, {
     id: 34,
     title: 'Zaam-Dox',
     status: 'Orange',
-    date_created: '06/21/2019',
-    candidates_count: 44,
+    dateCreated: '06/21/2019',
+    candCount: 44,
     city: 'Lima',
     state: 'Ohio'
   }, {
     id: 35,
     title: 'Domainer',
     status: 'Purple',
-    date_created: '07/21/2018',
-    candidates_count: 65,
+    dateCreated: '07/21/2018',
+    candCount: 65,
     city: 'Irving',
     state: 'Texas'
   }, {
     id: 36,
     title: 'Andalax',
     status: 'Turquoise',
-    date_created: '11/12/2018',
-    candidates_count: 48,
+    dateCreated: '11/12/2018',
+    candCount: 48,
     city: 'El Paso',
     state: 'Texas'
   }, {
     id: 37,
     title: 'Stringtough',
     status: 'Violet',
-    date_created: '03/19/2019',
-    candidates_count: 5,
+    dateCreated: '03/19/2019',
+    candCount: 5,
     city: 'Fort Wayne',
     state: 'Indiana'
   }, {
     id: 38,
     title: 'Sonsing',
     status: 'Yellow',
-    date_created: '07/09/2019',
-    candidates_count: 70,
+    dateCreated: '07/09/2019',
+    candCount: 70,
     city: 'New York City',
     state: 'New York'
   }, {
     id: 39,
     title: 'Zamit',
     status: 'Indigo',
-    date_created: '05/26/2019',
-    candidates_count: 72,
+    dateCreated: '05/26/2019',
+    candCount: 72,
     city: 'Bakersfield',
     state: 'California'
   }, {
     id: 40,
     title: 'Vagram',
     status: 'Turquoise',
-    date_created: '12/10/2019',
-    candidates_count: 34,
+    dateCreated: '12/10/2019',
+    candCount: 34,
     city: 'Jacksonville',
     state: 'Florida'
   }, {
     id: 41,
     title: 'Sonair',
     status: 'Turquoise',
-    date_created: '05/26/2018',
-    candidates_count: 84,
+    dateCreated: '05/26/2018',
+    candCount: 84,
     city: 'Fargo',
     state: 'North Dakota'
   }, {
     id: 42,
     title: 'Toughjoyfax',
     status: 'Aquamarine',
-    date_created: '08/03/2019',
-    candidates_count: 67,
+    dateCreated: '08/03/2019',
+    candCount: 67,
     city: 'Juneau',
     state: 'Alaska'
   }, {
     id: 43,
     title: 'Andalax',
     status: 'Pink',
-    date_created: '03/04/2019',
-    candidates_count: 68,
+    dateCreated: '03/04/2019',
+    candCount: 68,
     city: 'Madison',
     state: 'Wisconsin'
   }, {
     id: 44,
     title: 'Aerified',
     status: 'Purple',
-    date_created: '04/01/2019',
-    candidates_count: 5,
+    dateCreated: '04/01/2019',
+    candCount: 5,
     city: 'Dallas',
     state: 'Texas'
   }, {
     id: 45,
     title: 'Tampflex',
     status: 'Purple',
-    date_created: '08/04/2018',
-    candidates_count: 44,
+    dateCreated: '08/04/2018',
+    candCount: 44,
     city: 'Mansfield',
     state: 'Ohio'
   }, {
     id: 46,
     title: 'Tampflex',
     status: 'Turquoise',
-    date_created: '08/01/2019',
-    candidates_count: 86,
+    dateCreated: '08/01/2019',
+    candCount: 86,
     city: 'Irvine',
     state: 'California'
   }, {
     id: 47,
     title: 'Transcof',
     status: 'Khaki',
-    date_created: '05/03/2018',
-    candidates_count: 62,
+    dateCreated: '05/03/2018',
+    candCount: 62,
     city: 'Atlanta',
     state: 'Georgia'
   }, {
     id: 48,
     title: 'Sonsing',
     status: 'Puce',
-    date_created: '10/03/2019',
-    candidates_count: 72,
+    dateCreated: '10/03/2019',
+    candCount: 72,
     city: 'Roanoke',
     state: 'Virginia'
   }, {
     id: 49,
     title: 'Holdlamis',
     status: 'Puce',
-    date_created: '01/08/2018',
-    candidates_count: 25,
+    dateCreated: '01/08/2018',
+    candCount: 25,
     city: 'Baltimore',
     state: 'Maryland'
   }, {
     id: 50,
     title: 'Biodex',
     status: 'Orange',
-    date_created: '02/04/2019',
-    candidates_count: 30,
+    dateCreated: '02/04/2019',
+    candCount: 30,
     city: 'Salt Lake City',
     state: 'Utah'
   }, {
     id: 51,
     title: 'Tresom',
     status: 'Turquoise',
-    date_created: '06/05/2018',
-    candidates_count: 38,
+    dateCreated: '06/05/2018',
+    candCount: 38,
     city: 'North Little Rock',
     state: 'Arkansas'
   }, {
     id: 52,
     title: 'Trippledex',
     status: 'Red',
-    date_created: '02/20/2018',
-    candidates_count: 96,
+    dateCreated: '02/20/2018',
+    candCount: 96,
     city: 'Denver',
     state: 'Colorado'
   }, {
     id: 53,
     title: 'Otcom',
     status: 'Mauv',
-    date_created: '11/13/2019',
-    candidates_count: 21,
+    dateCreated: '11/13/2019',
+    candCount: 21,
     city: 'Akron',
     state: 'Ohio'
   }, {
     id: 54,
     title: 'Keylex',
     status: 'Maroon',
-    date_created: '02/22/2018',
-    candidates_count: 73,
+    dateCreated: '02/22/2018',
+    candCount: 73,
     city: 'Arlington',
     state: 'Texas'
   }, {
     id: 55,
     title: 'Quo Lux',
     status: 'Teal',
-    date_created: '04/19/2018',
-    candidates_count: 75,
+    dateCreated: '04/19/2018',
+    candCount: 75,
     city: 'Indianapolis',
     state: 'Indiana'
   }, {
     id: 56,
     title: 'Kanlam',
     status: 'Purple',
-    date_created: '10/07/2019',
-    candidates_count: 47,
+    dateCreated: '10/07/2019',
+    candCount: 47,
     city: 'Charleston',
     state: 'West Virginia'
   }, {
     id: 57,
     title: 'Tampflex',
     status: 'Blue',
-    date_created: '11/18/2019',
-    candidates_count: 75,
+    dateCreated: '11/18/2019',
+    candCount: 75,
     city: 'Orlando',
     state: 'Florida'
   }, {
     id: 58,
     title: 'Prodder',
     status: 'Violet',
-    date_created: '11/14/2019',
-    candidates_count: 25,
+    dateCreated: '11/14/2019',
+    candCount: 25,
     city: 'San Antonio',
     state: 'Texas'
   }, {
     id: 59,
     title: 'Bigtax',
     status: 'Mauv',
-    date_created: '05/20/2019',
-    candidates_count: 81,
+    dateCreated: '05/20/2019',
+    candCount: 81,
     city: 'Phoenix',
     state: 'Arizona'
   }, {
     id: 60,
     title: 'Prodder',
     status: 'Khaki',
-    date_created: '06/03/2019',
-    candidates_count: 20,
+    dateCreated: '06/03/2019',
+    candCount: 20,
     city: 'Carol Stream',
     state: 'Illinois'
   }, {
     id: 61,
     title: 'Sub-Ex',
     status: 'Purple',
-    date_created: '09/13/2018',
-    candidates_count: 25,
+    dateCreated: '09/13/2018',
+    candCount: 25,
     city: 'San Diego',
     state: 'California'
   }, {
     id: 62,
     title: 'Greenlam',
     status: 'Aquamarine',
-    date_created: '09/20/2018',
-    candidates_count: 33,
+    dateCreated: '09/20/2018',
+    candCount: 33,
     city: 'Fort Wayne',
     state: 'Indiana'
   }, {
     id: 63,
     title: 'Zaam-Dox',
     status: 'Fuscia',
-    date_created: '10/02/2018',
-    candidates_count: 42,
+    dateCreated: '10/02/2018',
+    candCount: 42,
     city: 'Roanoke',
     state: 'Virginia'
   }, {
     id: 64,
     title: 'Flexidy',
     status: 'Violet',
-    date_created: '04/24/2018',
-    candidates_count: 96,
+    dateCreated: '04/24/2018',
+    candCount: 96,
     city: 'Des Moines',
     state: 'Iowa'
   }, {
     id: 65,
     title: 'Stronghold',
     status: 'Goldenrod',
-    date_created: '12/30/2018',
-    candidates_count: 29,
+    dateCreated: '12/30/2018',
+    candCount: 29,
     city: 'Oakland',
     state: 'California'
   }, {
     id: 66,
     title: 'Tresom',
     status: 'Indigo',
-    date_created: '05/02/2019',
-    candidates_count: 68,
+    dateCreated: '05/02/2019',
+    candCount: 68,
     city: 'Chicago',
     state: 'Illinois'
   }, {
     id: 67,
     title: 'Bigtax',
     status: 'Indigo',
-    date_created: '05/27/2018',
-    candidates_count: 96,
+    dateCreated: '05/27/2018',
+    candCount: 96,
     city: 'Corpus Christi',
     state: 'Texas'
   }, {
     id: 68,
     title: 'Job',
     status: 'Khaki',
-    date_created: '08/02/2018',
-    candidates_count: 33,
+    dateCreated: '08/02/2018',
+    candCount: 33,
     city: 'York',
     state: 'Pennsylvania'
   }, {
     id: 69,
     title: 'Span',
     status: 'Purple',
-    date_created: '08/14/2019',
-    candidates_count: 62,
+    dateCreated: '08/14/2019',
+    candCount: 62,
     city: 'Miami',
     state: 'Florida'
   }, {
     id: 70,
     title: 'Voyatouch',
     status: 'Turquoise',
-    date_created: '05/25/2019',
-    candidates_count: 80,
+    dateCreated: '05/25/2019',
+    candCount: 80,
     city: 'Hartford',
     state: 'Connecticut'
   }, {
     id: 71,
     title: 'Solarbreeze',
     status: 'Puce',
-    date_created: '11/05/2018',
-    candidates_count: 9,
+    dateCreated: '11/05/2018',
+    candCount: 9,
     city: 'New York City',
     state: 'New York'
   }, {
     id: 72,
     title: 'Wrapsafe',
     status: 'Red',
-    date_created: '05/07/2018',
-    candidates_count: 32,
+    dateCreated: '05/07/2018',
+    candCount: 32,
     city: 'Fort Worth',
     state: 'Texas'
   }, {
     id: 73,
     title: 'Holdlamis',
     status: 'Turquoise',
-    date_created: '08/30/2019',
-    candidates_count: 6,
+    dateCreated: '08/30/2019',
+    candCount: 6,
     city: 'Flushing',
     state: 'New York'
   }, {
     id: 74,
     title: 'Toughjoyfax',
     status: 'Fuscia',
-    date_created: '09/05/2018',
-    candidates_count: 17,
+    dateCreated: '09/05/2018',
+    candCount: 17,
     city: 'Washington',
     state: 'District of Columbia'
   }, {
     id: 75,
     title: 'Stringtough',
     status: 'Puce',
-    date_created: '05/18/2018',
-    candidates_count: 56,
+    dateCreated: '05/18/2018',
+    candCount: 56,
     city: 'Henderson',
     state: 'Nevada'
   }, {
     id: 76,
     title: 'Y-Solowarm',
     status: 'Violet',
-    date_created: '03/27/2019',
-    candidates_count: 48,
+    dateCreated: '03/27/2019',
+    candCount: 48,
     city: 'Colorado Springs',
     state: 'Colorado'
   }, {
     id: 77,
     title: 'Matsoft',
     status: 'Goldenrod',
-    date_created: '01/29/2018',
-    candidates_count: 89,
+    dateCreated: '01/29/2018',
+    candCount: 89,
     city: 'Philadelphia',
     state: 'Pennsylvania'
   }, {
     id: 78,
     title: 'Voltsillam',
     status: 'Puce',
-    date_created: '11/17/2019',
-    candidates_count: 43,
+    dateCreated: '11/17/2019',
+    candCount: 43,
     city: 'Winter Haven',
     state: 'Florida'
   }, {
     id: 79,
     title: 'Cardguard',
     status: 'Fuscia',
-    date_created: '04/24/2018',
-    candidates_count: 32,
+    dateCreated: '04/24/2018',
+    candCount: 32,
     city: 'Brooklyn',
     state: 'New York'
   }, {
     id: 80,
     title: 'Quo Lux',
     status: 'Aquamarine',
-    date_created: '12/04/2018',
-    candidates_count: 100,
+    dateCreated: '12/04/2018',
+    candCount: 100,
     city: 'Lake Charles',
     state: 'Louisiana'
   }, {
     id: 81,
     title: 'Voyatouch',
     status: 'Aquamarine',
-    date_created: '07/19/2018',
-    candidates_count: 49,
+    dateCreated: '07/19/2018',
+    candCount: 49,
     city: 'Lansing',
     state: 'Michigan'
   }, {
     id: 82,
     title: 'Stim',
     status: 'Fuscia',
-    date_created: '07/27/2019',
-    candidates_count: 21,
+    dateCreated: '07/27/2019',
+    candCount: 21,
     city: 'Cincinnati',
     state: 'Ohio'
   }, {
     id: 83,
     title: 'Keylex',
     status: 'Violet',
-    date_created: '02/23/2019',
-    candidates_count: 93,
+    dateCreated: '02/23/2019',
+    candCount: 93,
     city: 'Dallas',
     state: 'Texas'
   }, {
     id: 84,
     title: 'Tresom',
     status: 'Puce',
-    date_created: '04/17/2019',
-    candidates_count: 25,
+    dateCreated: '04/17/2019',
+    candCount: 25,
     city: 'Omaha',
     state: 'Nebraska'
   }, {
     id: 85,
     title: 'Daltfresh',
     status: 'Green',
-    date_created: '10/04/2019',
-    candidates_count: 69,
+    dateCreated: '10/04/2019',
+    candCount: 69,
     city: 'Fayetteville',
     state: 'North Carolina'
   }, {
     id: 86,
     title: 'Konklab',
     status: 'Aquamarine',
-    date_created: '05/08/2018',
-    candidates_count: 99,
+    dateCreated: '05/08/2018',
+    candCount: 99,
     city: 'Champaign',
     state: 'Illinois'
   }, {
     id: 87,
     title: 'Transcof',
     status: 'Mauv',
-    date_created: '04/20/2018',
-    candidates_count: 74,
+    dateCreated: '04/20/2018',
+    candCount: 74,
     city: 'Atlanta',
     state: 'Georgia'
   }, {
     id: 88,
     title: 'Domainer',
     status: 'Red',
-    date_created: '07/04/2018',
-    candidates_count: 56,
+    dateCreated: '07/04/2018',
+    candCount: 56,
     city: 'Clearwater',
     state: 'Florida'
   }, {
     id: 89,
     title: 'Stronghold',
     status: 'Mauv',
-    date_created: '07/28/2018',
-    candidates_count: 65,
+    dateCreated: '07/28/2018',
+    candCount: 65,
     city: 'Topeka',
     state: 'Kansas'
   }, {
     id: 90,
     title: 'Bigtax',
     status: 'Violet',
-    date_created: '03/18/2018',
-    candidates_count: 17,
+    dateCreated: '03/18/2018',
+    candCount: 17,
     city: 'Waterloo',
     state: 'Iowa'
   }, {
     id: 91,
     title: 'Temp',
     status: 'Indigo',
-    date_created: '08/16/2018',
-    candidates_count: 43,
+    dateCreated: '08/16/2018',
+    candCount: 43,
     city: 'Portland',
     state: 'Oregon'
   }, {
     id: 92,
     title: 'Rank',
     status: 'Violet',
-    date_created: '12/26/2019',
-    candidates_count: 62,
+    dateCreated: '12/26/2019',
+    candCount: 62,
     city: 'Green Bay',
     state: 'Wisconsin'
   }, {
     id: 93,
     title: 'Stim',
     status: 'Turquoise',
-    date_created: '05/07/2018',
-    candidates_count: 65,
+    dateCreated: '05/07/2018',
+    candCount: 65,
     city: 'Jamaica',
     state: 'New York'
   }, {
     id: 94,
     title: 'Alpha',
     status: 'Mauv',
-    date_created: '11/07/2018',
-    candidates_count: 66,
+    dateCreated: '11/07/2018',
+    candCount: 66,
     city: 'Jacksonville',
     state: 'Florida'
   }, {
     id: 95,
     title: 'It',
     status: 'Orange',
-    date_created: '10/20/2019',
-    candidates_count: 36,
+    dateCreated: '10/20/2019',
+    candCount: 36,
     city: 'Brooklyn',
     state: 'New York'
   }, {
     id: 96,
     title: 'Sonsing',
     status: 'Pink',
-    date_created: '05/28/2018',
-    candidates_count: 6,
+    dateCreated: '05/28/2018',
+    candCount: 6,
     city: 'Richmond',
     state: 'Virginia'
   }, {
     id: 97,
     title: 'Bytecard',
     status: 'Teal',
-    date_created: '09/15/2018',
-    candidates_count: 91,
+    dateCreated: '09/15/2018',
+    candCount: 91,
     city: 'Oakland',
     state: 'California'
   }, {
     id: 98,
     title: 'Aerified',
     status: 'Puce',
-    date_created: '01/16/2019',
-    candidates_count: 11,
+    dateCreated: '01/16/2019',
+    candCount: 11,
     city: 'Denver',
     state: 'Colorado'
   }, {
     id: 99,
     title: 'Redhold',
     status: 'Crimson',
-    date_created: '04/05/2018',
-    candidates_count: 24,
+    dateCreated: '04/05/2018',
+    candCount: 24,
     city: 'Lexington',
     state: 'Kentucky'
   }, {
     id: 100,
     title: 'Viva',
     status: 'Red',
-    date_created: '03/07/2019',
-    candidates_count: 36,
+    dateCreated: '03/07/2019',
+    candCount: 36,
     city: 'Sacramento',
     state: 'California'
   }];

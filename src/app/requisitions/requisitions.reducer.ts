@@ -1,16 +1,16 @@
-import { Action, createReducer, on } from '@ngrx/store';
+import { Action, createReducer, on, createSelector } from '@ngrx/store';
 import * as reqActions from './requisitions.actions';
-import * as fromRoot from '../reducers/index';
+import * as fromRoot from '../reducers';
 import { ReqItem } from './requisitions.model';
 
-export const requisitionsFeatureKey = 'reqs';
+export const requisitionsFeatureKey = 'requisitions';
 
 export interface ReqsState {
   requisitions: ReqItem[];
 }
 
 export interface State extends fromRoot.State {
-  req: ReqsState;
+  requisitions: ReqsState;
 }
 
 const initialState: ReqsState = {
@@ -19,8 +19,16 @@ const initialState: ReqsState = {
 
 const reqsReducer = createReducer(
   initialState,
+  on(reqActions.reqsLoaded , (state, { requisitions }) => ({ ...state, requisitions }))
 );
 
 export function reducer(state: ReqsState | undefined, action: Action) {
   return reqsReducer(state, action);
 }
+
+export const selectFeature = (state: State) => state.requisitions;
+
+export const selectRequisitions = createSelector(
+  selectFeature,
+  (state: ReqsState) => state.requisitions
+);

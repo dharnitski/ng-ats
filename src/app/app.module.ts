@@ -11,6 +11,8 @@ import { reducers, metaReducers } from './reducers';
 import { MaterialModule } from './material.module';
 import { HeaderComponent } from './navigation/header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { EffectsModule } from '@ngrx/effects';
+import { AppEffects } from './app.effects';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { HomepageComponent } from './homepage/homepage.component';
         strictStateImmutability: true,
         strictActionImmutability: true
       }
-    })
+    }),
+    EffectsModule.forRoot([AppEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]
