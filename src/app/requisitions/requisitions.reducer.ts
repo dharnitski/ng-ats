@@ -1,13 +1,23 @@
 import { Action, createReducer, on, createSelector } from '@ngrx/store';
 import * as reqActions from './requisitions.actions';
 import * as fromRoot from '../reducers';
-import { ReqItem } from './requisitions.model';
+import { ReqItem, ReqFilter } from './requisitions.model';
+import { filter } from 'rxjs/operators';
 
 export const requisitionsFeatureKey = 'requisitions';
 
 export interface ReqsState {
+
+  // requisitions in Req List
   requisitions: ReqItem[];
+
+  // Current Requisition
+  // todo: use different type to support more details
+  // todo: split into sections if necessary
   requisition: ReqItem;
+
+  // requisitons search filter - everything that affects reqs list retrieval logic
+  filter: ReqFilter
 }
 
 export interface State extends fromRoot.State {
@@ -16,7 +26,10 @@ export interface State extends fromRoot.State {
 
 const initialState: ReqsState = {
   requisitions: [],
-  requisition: null
+  requisition: null,
+  filter: {
+    keywords: null,
+  }
 };
 
 const reqsReducer = createReducer(
@@ -40,3 +53,16 @@ export const selectCurrentReq = createSelector(
   selectFeature,
   (state: ReqsState) => state.requisition
 );
+
+export const selectReqFilter = createSelector(
+  selectFeature,
+  (state: ReqsState) => state.filter
+);
+
+export const selectReqFilterKeywords = createSelector(
+  selectReqFilter,
+  (state: ReqFilter) => state.keywords
+);
+
+
+

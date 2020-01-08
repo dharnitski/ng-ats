@@ -11,4 +11,8 @@ export class CandidatesService {
       return of(allCand.filter(cand => cand.reqId === filter.reqId));
     }
   }
+
+  getCandidate(candId: number): Observable<CandItem> {
+    return of(allCand.find(cand => cand.id === candId));
+  }
 }

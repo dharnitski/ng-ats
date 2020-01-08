@@ -1,8 +1,9 @@
 import { createAction, props } from '@ngrx/store';
-import { ReqItem } from './requisitions.model';
+import { ReqItem, ReqFilter } from './requisitions.model';
 
-export const loadRequisitions = createAction(
-  '[Reqs] Load Requisitions'
+export const reqFilterChanged = createAction(
+  '[Reqs] Requisitions Filter Changed',
+  props<{ filter: ReqFilter }>()
 );
 
 export const reqsLoaded = createAction(

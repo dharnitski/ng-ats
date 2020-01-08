@@ -2,15 +2,15 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { EMPTY } from 'rxjs';
 import { map, mergeMap, catchError } from 'rxjs/operators';
-import { reqsLoaded, loadRequisitions, reqSelected, reqLoaded } from './requisitions.actions';
+import { reqsLoaded, reqSelected, reqLoaded, reqFilterChanged } from './requisitions.actions';
 import { RequisitionService } from './requisitions.service';
 
 @Injectable()
 export class RequisitionsEffects {
 
   loadReqs$ = createEffect(() => this.actions$.pipe(
-    ofType(loadRequisitions),
-    mergeMap(() => this.reqService.getReqs()
+    ofType(reqFilterChanged),
+    mergeMap(action => this.reqService.getReqs(action.filter)
       .pipe(
         map(requisitions => reqsLoaded({ requisitions })),
         catchError(() => EMPTY)

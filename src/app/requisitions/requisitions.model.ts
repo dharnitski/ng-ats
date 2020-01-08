@@ -10,3 +10,7 @@ export interface ReqItem {
   city: string;
   state: string;
 }
+
+export interface ReqFilter {
+  keywords: string;
+}

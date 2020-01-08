@@ -3,8 +3,9 @@ import { Store } from '@ngrx/store';
 import { MatTableDataSource, MatSort, MatPaginator } from '@angular/material';
 
 import * as fromReqs from '../requisitions.reducer';
-import { ReqItem } from '../requisitions.model';
-import { loadRequisitions } from '../requisitions.actions';
+import { ReqItem, ReqFilter } from '../requisitions.model';
+import { reqFilterChanged } from '../requisitions.actions';
+import { take } from 'rxjs/operators';
 
 export interface PeriodicElement {
   id: number,
@@ -32,7 +33,10 @@ export class RequisitionsListComponent implements OnInit, AfterViewInit {
     this.store.select(fromReqs.selectRequisitions).subscribe(reqs => {
       this.dataSource.data = reqs;
     });
-    this.store.dispatch(loadRequisitions());
+
+    this.store.select(fromReqs.selectReqFilter)
+      .pipe(take(1))
+      .subscribe((filter: ReqFilter) => this.store.dispatch(reqFilterChanged({ filter })));
   }
 
   ngAfterViewInit(): void {
