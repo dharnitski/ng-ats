@@ -1,7 +1,7 @@
 <mat-card>
   <form fxLayout="column">
     <mat-form-field>
-      <input matInput placeholder="Keywords">
+      <input matInput placeholder="Keywords"  value="{{keywords}}" (input)="keywordsChanged($event.target.value)">
     </mat-form-field>
     <mat-label>Status</mat-label>
     <mat-radio-group aria-label="Status" fxLayout="column" fxLayoutGap="10px">
